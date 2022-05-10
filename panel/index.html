@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Loan Calculator</title>
+
+	<style>
+		body {
+			background-color: pink;
+			font-family: 'Trebuchet MS';
+		}
+		
+		h1 {
+			font-size: 35px;
+		}
+		
+		h1 {
+			font-size: 21px;
+			margin-top: 20px;
+		}
+		
+		.calculator {
+			width: 400px;
+			height: 450px;
+			background-color: mediumaquamarine;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			padding: 20px 0px 0px 100px;
+			border-radius: 50px;
+			color: white;
+		}
+		
+		input {
+			padding: 7px;
+			width: 70%;
+			margin-top: 7px;
+		}
+
+
+
+	.button {
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+	transition-duration: 0.4s;
+  	cursor: pointer;
+}
+
+	.button1 {background-color: #b5320b;} 
+
+	.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+	</style>
+</head>
+
+<body>
+	<div class="calculator">
+		<h1>Loan Application</h1>
+
+		<!-- Calling Calculate function defined in app.js -->
+		<p>Loan Amount Required (₹):
+			<input id="amount" type="number"
+			onchange="Calculate()">
+		</p>
+
+		<p>Interest Rate :
+			<input id="rate" type="number"
+			onchange="Calculate()">
+		</p>
+
+		<p>Tenure(In months) :
+			<input id="months" type="number"
+			onchange="Calculate()">
+		</p>
+
+
+		<h2 id="total"></h2>
+		<button class="button button1">Apply</button>
+	</div>
+	<script src="app.js"></script>
+	<a class="btn btn-first" href="https://www.paisabazaar.com/cibil-credit-report/">Calculate  your cibil-score</a>
+
+</body>
+
+</html>
